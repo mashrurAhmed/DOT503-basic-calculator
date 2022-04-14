@@ -22,8 +22,10 @@ class Calculator:
 
     def calculate(self, string1):
         input_list = string1.split(' ')
-
-        num1 = float(input_list[0])
+        if(input_list[0]) == 'r':
+            num1 = self.result
+        else:
+            num1 = float(input_list[0])
         num2 = float(input_list[2])
         if(input_list[1]) == '+':
             self.result = self.add(num1, num2)
