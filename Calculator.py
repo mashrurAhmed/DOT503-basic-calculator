@@ -20,9 +20,12 @@ class Calculator:
         self.result = num1 / num2
         return self.result
 
-    def calculate(self, input_list):
 
-        num1 = float(input_list[0])
+    def calculate(self, input_list):
+        if(input_list[0]) == 'r':
+            num1 = self.result
+        else:
+            num1 = float(input_list[0])
         num2 = float(input_list[2])
         if(input_list[1]) == '+':
             self.result = self.add(num1, num2)
