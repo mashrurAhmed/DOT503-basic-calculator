@@ -20,7 +20,6 @@ class Calculator:
         self.result = num1 / num2
         return self.result
 
-
     def calculate(self, input_list):
         if(input_list[0]) == 'r':
             num1 = self.result
