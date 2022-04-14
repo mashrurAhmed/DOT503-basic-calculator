@@ -20,8 +20,7 @@ class Calculator:
         self.result = num1 / num2
         return self.result
 
-    def calculate(self, string1):
-        input_list = string1.split(' ')
+    def calculate(self, input_list):
 
         num1 = float(input_list[0])
         num2 = float(input_list[2])
