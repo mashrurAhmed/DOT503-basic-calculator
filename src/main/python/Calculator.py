@@ -26,7 +26,10 @@ class Calculator:
                 num1 = self.result
             else:
                 num1 = float(input_list[0])
-            num2 = float(input_list[2])
+            if(input_list[2]) == 'r':
+                num2 = self.result
+            else:
+                num2 = float(input_list[2])
             if(input_list[1]) == '+':
                 self.result = self.add(num1, num2)
             elif(input_list[1]) == '-':
@@ -34,7 +37,10 @@ class Calculator:
             elif(input_list[1]) == '*':
                 self.result = self.multiply(num1, num2)
             elif(input_list[1]) == '/':
-                self.result = self.divide(num1, num2)
+                if(num2 == 0):
+                    print('Cannot divide by zero')
+                else:
+                    self.result = self.divide(num1, num2)
             return self.result
         except ValueError:
             print("Please input numbers or 'r'. Refer to README for format")
