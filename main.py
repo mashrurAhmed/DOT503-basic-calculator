@@ -21,6 +21,6 @@ if __name__ == "__main__":
             print("Invalid input given.")
             continue
         result = calculator.calculate(calc_list)
-        print(result)
+        print(calculator.getresult())
     print(("Last calculation result: {}\nEnd of program").format(
         calculator.getresult()))
