@@ -1,0 +1,62 @@
+
+Running tests...
+----------------------------------------------------------------------
+.EF.F
+======================================================================
+ERROR [0.025s]: test_string_inputs (calculater_tests.CalculatorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "d:\projects\dot503-basic-calculator\src\unittest\python\calculater_tests.py", line 26, in test_string_inputs
+    self.assertRaises(ValueError, calculator.calculate(['x', '-', 'y']))
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 738, in assertRaises
+    return context.handle('assertRaises', args, kwargs)
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 201, in handle
+    callable_obj(*args, **kwargs)
+TypeError: 'NoneType' object is not callable
+
+======================================================================
+FAIL [0.017s]: test_substract_by_result (calculater_tests.CalculatorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "d:\projects\dot503-basic-calculator\src\unittest\python\calculater_tests.py", line 21, in test_substract_by_result
+    self.assertEqual(calculator.calculate(
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 838, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != 3 : Should be 3
+
+======================================================================
+FAIL [0.015s]: test_zero_division (calculater_tests.CalculatorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "d:\projects\dot503-basic-calculator\src\unittest\python\calculater_tests.py", line 33, in test_zero_division
+    self.fail("Division by 0 not handled")
+  File "D:\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+AssertionError: Division by 0 not handled
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.219s
+
+FAILED (failures=2, errors=1)
+
+Generating XML reports...

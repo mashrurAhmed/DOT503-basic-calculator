@@ -1,0 +1,19 @@
+{
+  "errors": [
+    {
+      "test": "calculater_tests.CalculatorTest.test_string_inputs",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 591, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 549, in _callTestMethod\n    method()\n  File \"d:\\projects\\dot503-basic-calculator\\src\\unittest\\python\\calculater_tests.py\", line 26, in test_string_inputs\n    self.assertRaises(ValueError, calculator.calculate(['x', '-', 'y']))\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 738, in assertRaises\n    return context.handle('assertRaises', args, kwargs)\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 201, in handle\n    callable_obj(*args, **kwargs)\nTypeError: 'NoneType' object is not callable\n"
+    }
+  ],
+  "failures": [
+    {
+      "test": "calculater_tests.CalculatorTest.test_substract_by_result",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 591, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 549, in _callTestMethod\n    method()\n  File \"d:\\projects\\dot503-basic-calculator\\src\\unittest\\python\\calculater_tests.py\", line 21, in test_substract_by_result\n    self.assertEqual(calculator.calculate(\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 845, in assertEqual\n    assertion_func(first, second, msg=msg)\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 838, in _baseAssertEqual\n    raise self.failureException(msg)\nAssertionError: None != 3 : Should be 3\n"
+    },
+    {
+      "test": "calculater_tests.CalculatorTest.test_zero_division",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 591, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 549, in _callTestMethod\n    method()\n  File \"d:\\projects\\dot503-basic-calculator\\src\\unittest\\python\\calculater_tests.py\", line 33, in test_zero_division\n    self.fail(\"Division by 0 not handled\")\n  File \"D:\\Programs\\Python\\Python310\\lib\\unittest\\case.py\", line 675, in fail\n    raise self.failureException(msg)\nAssertionError: Division by 0 not handled\n"
+    }
+  ],
+  "tests-run": 5
+}

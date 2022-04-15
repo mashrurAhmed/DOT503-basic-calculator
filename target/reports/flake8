@@ -1,0 +1,2 @@
+d:\projects\dot503-basic-calculator\src\main\python\main.py:11:1: E305 expected 2 blank lines after class or function definition, found 1
+d:\projects\dot503-basic-calculator\src\main\python\main.py:20:45: E712 comparison to False should be 'if cond is False:' or 'if not cond:'
