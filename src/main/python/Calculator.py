@@ -1,6 +1,9 @@
 
 
 class Calculator:
+    '''
+    A basic calculator class
+    '''
     def __init__(self):
         self.result = 0
 
