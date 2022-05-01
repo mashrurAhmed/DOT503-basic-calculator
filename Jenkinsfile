@@ -3,9 +3,13 @@ pipeline{
     agent any
 
     stages {
-        stage("test pipeline"){
+        stage("Clone Repo"){
             steps {
-                echo "testing the pipeline"
+                echo "Cloning the repository..."
+                sh "rm -fr DOT503-basic-calculator"
+                sh "git clone https://github.com/mashrurAhmed/DOT503-basic-calculator.git"
+                sh "git fetch"
+                sh "git checkout unit-test"
             }
         }
     }
