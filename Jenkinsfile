@@ -1,6 +1,12 @@
 pipeline {
+    
     agent any
-    stages ("Test Pipeline") {
-        echo "Pipeline working..."
+
+    stages {
+        stage("test pipeline"){
+            steps {
+                echo "testing the pipeline"
+            }
+        }
     }
 }
