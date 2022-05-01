@@ -9,6 +9,11 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(calculator.calculate(
             ['0', '+', '3']), 3, "Should be 3")
 
+    def test_float_inputs(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.calculate(
+            ['0.001', '*', '1000']), 1, "Should be 1")
+
     def test_substract_from_result(self):
         calculator = Calculator()
         calculator.calculate(['0', '+', '3'])
@@ -20,10 +25,6 @@ class CalculatorTest(unittest.TestCase):
         calculator.calculate(['0', '+', '3'])
         self.assertEqual(calculator.calculate(
             ['6', '-', 'r']), 3, "Should be 3")
-
-    def test_string_inputs(self):
-        calculator = Calculator()
-        self.assertRaises(ValueError, calculator.calculate(['x', '-', 'y']))
 
     def test_zero_division(self):
         try:
