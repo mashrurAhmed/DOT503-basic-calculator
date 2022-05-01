@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     stages {
-        stage("test pipeline"){
+        stage("test webhook"){
             steps {
-                echo "testing the pipeline"
+                echo "Test webhook"
             }
         }
     }
