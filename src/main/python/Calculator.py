@@ -25,14 +25,14 @@ class Calculator:
 
     def calculate(self, input_list):
         try:
-            if(input_list[0]) == 'r':
-                num1 = self.result
-            else:
-                num1 = float(input_list[0])
-            # if(input_list[2]) == 'r':
-            #     num2 = self.result
+            # if(input_list[0]) == 'r':
+            #     num1 = self.result
             # else:
-            num2 = float(input_list[2])
+            num1 = float(input_list[0])
+            if(input_list[2]) == 'r':
+                num2 = self.result
+            else:
+                num2 = float(input_list[2])
             if(input_list[1]) == '+':
                 self.result = self.add(num1, num2)
             elif(input_list[1]) == '-':
