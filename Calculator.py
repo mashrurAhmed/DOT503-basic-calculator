@@ -21,6 +21,9 @@ class Calculator:
         return self.result
 
     def calculate(self, input_list):
+        '''
+        Basic Calculator
+        '''
         try:
             if(input_list[0]) == 'r':
                 num1 = self.result
